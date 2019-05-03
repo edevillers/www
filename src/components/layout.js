@@ -18,6 +18,11 @@ class Layout extends React.Component {
             marginTop: 0,
           }}
         >
+          <img
+            className="hide"
+            src="/icons/icon-72x72.png"
+            style={{ marginBottom: 0, verticalAlign: "middle" }}
+            alt="logo"/>
           <Link
             style={{
               boxShadow: `none`,

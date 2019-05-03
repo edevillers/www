@@ -38,11 +38,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Écrit par <strong>{author}</strong> qui vit à Granby et travaille parfois à Boucherville.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                Suivez-moi sur Twitter.
               </a>
             </p>
           </div>

@@ -15,8 +15,9 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title="Tous les articles"
+          keywords={[`blog`, `tech`, `technologie`, `technique`, `application`]}
+          lang="fr"
         />
         <Bio />
         {posts.map(({ node }) => {
@@ -63,7 +64,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMM YYYY", locale: "fr")
             title
             description
           }

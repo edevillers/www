@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "www",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Un blog démontrant mes apprentissages des techniques, des technologie et des applications.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Pascale Audet <audetpascale@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/audetpascale/www/issues"
   },
   "dependencies": {
-    "gatsby": "^2.4.1",
+    "gatsby": "^2.4.2",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-feed": "^2.2.0",
     "gatsby-plugin-google-analytics": "^2.0.19",
@@ -38,19 +38,22 @@
   "devDependencies": {
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://www.audetpascale.com",
   "keywords": [
-    "gatsby"
+    "tech",
+    "app",
+    "blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/audetpascale/www.git"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
